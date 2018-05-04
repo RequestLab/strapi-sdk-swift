@@ -1,0 +1,38 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - devprojects
+  - vendor
+
+opt_in_rules:
+  - unneeded_parentheses_in_closure_argument
+  - switch_case_on_newline
+  - strict_fileprivate
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - redundant_nil_coalescing
+  - overridden_super_call
+  - prohibited_super_call
+  - operator_usage_whitespace
+  - no_extension_access_modifier
+  - nimble_operator
+  - multiline_parameters
+  - let_var_whitespace
+  - empty_count
+  - conditional_returns_on_newline
+  - closure_spacing
+  - closure_end_indentation
+  - attributes
+
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - line_length
+  - todo
+  - let_var_whitespace
+  - identifier_name
+  
+identifier_name:
+  min_length: 2 # only warning
+
+large_tuple:
+  - 3
